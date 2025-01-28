@@ -1,0 +1,13 @@
+
+; Version LPG-td-1.4
+; Seed 51401126
+; Command line: ./lpg-td -o domain-instance_amazonecho_source.pddl -f problem-instance_amazonecho_source.pddl -n 1 
+; Problem problem-instance_amazonecho_source.pddl
+; Actions having STRIPS duration
+; Time 0.09
+; Search time 0.09
+; Parsing time 0.00
+; Mutex time 0.00
+; MetricValue 3307.71
+
+0:   (STRATEGY-20 AMAZONECHO_SOURCE) [1]

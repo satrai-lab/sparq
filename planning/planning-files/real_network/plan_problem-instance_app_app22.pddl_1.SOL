@@ -1,0 +1,13 @@
+
+; Version LPG-td-1.4
+; Seed 51828985
+; Command line: ./lpg-td -o domain-instance_app_app22.pddl -f problem-instance_app_app22.pddl -n 1 
+; Problem problem-instance_app_app22.pddl
+; Actions having STRIPS duration
+; Time 0.00
+; Search time 0.00
+; Parsing time 0.00
+; Mutex time 0.00
+; MetricValue 2712.77
+
+0:   (STRATEGY-18 APP_APP22) [1]

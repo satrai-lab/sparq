@@ -1,0 +1,66 @@
+id,config
+1,9 app_app36
+2,14 intrusiondetection_source
+3,9 app_app1
+4,22 smartthings_source
+5,14 videosurveillance_source
+6,22 bms_source
+7,24 occupancymanagement_source
+8,20 energymanagement_source
+9,2 app_app38
+10,22 printing_source
+11,18 app_app12 app_app11
+12,18 app_app38 app_app36 
+13,20 firedetection_source
+14,21 smartthings_source
+15,20 occupancymanagement_source
+16,20 smartthings_source
+17,9 app_app22
+18,21 bms_source
+19,2 app_app1
+20,20 videosurveillance_source
+21,21 intrusiondetection_source
+22,2 app_app22
+23,22 occupancymanagement_source
+24,20 amazonecho_source
+25,24 bms_source
+26,19 app_app12 app_app11
+27,2 app_app12
+28,2 app_app2
+29,24 printing_source
+30,22 videosurveillance_source
+31,20 intrusiondetection_source
+32,22 amazonecho_source
+33,2 app_app11
+34,9 app_app38
+35,2 app_app36
+36,24 videosurveillance_source
+37,22 firedetection_source
+38,9 app_app2
+39,9 app_app11
+40,21 energymanagement_source
+41,18 app_app2 app_app1
+42,21 videosurveillance_source
+43,24 firedetection_source
+44,2 app_app23
+45,9 app_app12
+46,20 printing_source
+47,9 app_app23
+48,22 intrusiondetection_source
+49,19 app_app38 app_app36
+50,19 app_app2 app_app1
+51,24 energymanagement_source
+52,18 app_app22 app_app21 app_app23
+53,21 firedetection_source
+54,24 smartthings_source
+55,21 printing_source
+56,21 amazonecho_source
+57,2 app_app21
+58,9 app_app21
+59,14 smartthings_source
+60,20 bms_source
+61,22 energymanagement_source
+62,21 occupancymanagement_source
+63,24 intrusiondetection_source
+64,24 amazonecho_source
+65,19 app_app22 app_app21 app_app23

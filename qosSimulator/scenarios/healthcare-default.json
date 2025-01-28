@@ -1,0 +1,182 @@
+{
+  "IoTdevices": [
+ {
+        "deviceId": "N1",
+        "deviceName": "N1",
+        "publishFrequency":1,
+        "messageSize":44010957.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_compliance"]
+},
+{
+        "deviceId": "N2",
+        "deviceName": "N2",
+        "publishFrequency":1,
+        "messageSize":30315836.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_dataanalytics"]
+},
+{
+        "deviceId": "N3",
+        "deviceName": "N3",
+        "publishFrequency":1,
+        "messageSize":36657202.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_dataanalytics"]
+},
+{
+        "deviceId": "N4",
+        "deviceName": "N4",
+        "publishFrequency": 1,
+        "messageSize": 5965720.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_dataanalytics"]
+},
+{
+        "deviceId": "N5",
+        "deviceName": "N5",
+        "publishFrequency": 1,
+        "messageSize": 12238602.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_medicalanalysis"]
+},
+{
+        "deviceId": "N6",
+        "deviceName": "N6",
+        "publishFrequency": 1,
+        "messageSize": 10322632.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_medicalanalysis"]
+},
+{
+        "deviceId": "N10",
+        "deviceName": "N10",
+        "publishFrequency": 1,
+        "messageSize": 26859852.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_medicalanalysis"]
+},
+{
+        "deviceId": "N11",
+        "deviceName": "N11",
+        "publishFrequency": 1,
+        "messageSize": 12902102.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_medicalanalysis"]
+},
+{
+        "deviceId": "N12",
+        "deviceName": "N12",
+        "publishFrequency": 1,
+        "messageSize": 24616698.0,
+        "distribution":"exponential",
+        "publishesTo":["topic_medicalanalysis"]
+}
+  ],
+
+  "virtualSensors": [
+  ],
+
+"actuators": [
+  ],
+  
+  "applications": [
+{
+ "applicationName": "app_N1",
+"applicationId": "app_N1",
+"applicationCategory" : "VS",
+"priority": 0,
+"processingRate": 1000,
+"processingDistribution": "exponential",
+"subscribesTo": ["topic_dataanalytics", "topic_medicalanalysis"]
+},
+{
+ "applicationName": "app_N7",
+"applicationId": "app_N7",
+"applicationCategory" : "AN",
+"priority": 0,
+"processingRate": 1000,
+"processingDistribution": "exponential",
+"subscribesTo": ["topic_dataanalytics", "topic_medicalanalysis", "topic_compliance"]
+},
+{
+ "applicationName": "app_N8",
+"applicationId": "app_N8",
+"applicationCategory" : "RT",
+"priority": 0,
+"processingRate": 1000,
+"processingDistribution": "exponential",
+"subscribesTo": ["topic_dataanalytics"]
+},
+{
+ "applicationName": "app_N9",
+"applicationId": "app_N9",
+"applicationCategory" : "RT",
+"priority": 0,
+"processingRate": 1000,
+"processingDistribution": "exponential",
+"subscribesTo": ["topic_dataanalytics"]
+}
+  ],
+
+"applicationCategories": [
+  {
+    "categoryId": "AN",
+    "categoryName": "analytics"
+  },
+  {
+    "categoryId": "RT",
+    "categoryName": "realtime"
+  },
+  {
+    "categoryId": "TS",
+    "categoryName": "transactional"
+  },
+  {
+    "categoryId": "VS",
+    "categoryName": "videoStreaming"
+  }
+],
+  "topics": [
+{
+ "topicName": "topic_dataanalytics",
+"topicId": "topic_dataanalytics",
+"priority": 0,
+"publishers": ["N2", "N3", "N4"],
+"subscribers": ["app_N1","app_N7", "app_N8", "app_N9"]
+},
+{
+ "topicName": "topic_medicalanalysis",
+"topicId": "topic_medicalanalysis",
+"priority": 0,
+"publishers": ["N5", "N6", "N10", "N11", "N12"],
+"subscribers": ["app_N1","app_N7"]
+},
+{
+ "topicName": "topic_compliance",
+"topicId": "topic_compliance",
+"priority": 0,
+"publishers": ["N1"],
+"subscribers": ["app_N7"]
+}
+  ],
+
+  "broker": [
+  {
+    "brokerId": "input",
+    "brokerName": "input",
+    "bufferSize": 10000,
+    "processingRate": 100000000,
+    "topics": ["topic_dataanalytics", "topic_medicalanalysis", "topic_compliance"]
+  }
+],
+
+"systemBandwidth": 650,
+"bandwidthPolicy": "none",
+"priorityPolicy": "apps",
+"commChannelLossAN": 0,
+"commChannelLossRT": 0,
+"commChannelLossTS": 0,
+"commChannelLossVS": 0,
+"brokerCapacity": 100
+}

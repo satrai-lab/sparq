@@ -1,0 +1,13 @@
+
+; Version LPG-td-1.4
+; Seed 79004376
+; Command line: ./lpg-td -o domain-instance_N2.pddl -f problem-instance_N2.pddl -n 1 
+; Problem problem-instance_N2.pddl
+; Actions having STRIPS duration
+; Time 0.01
+; Search time 0.01
+; Parsing time 0.00
+; Mutex time 0.00
+; MetricValue 2.89
+
+0:   (STRATEGY-20 N2) [1]
